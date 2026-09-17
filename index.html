@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#edf1df" />
+  <meta name="description" content="A little corner of the internet made for John Carlo." />
+  <title>For John Carlo — Ches</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="site-locked">
+  <div class="grain" aria-hidden="true"></div>
+
+  <section id="songGate" class="song-gate" aria-label="Puwede Ka Ba intro">
+    <div class="gate-grid" aria-hidden="true"></div>
+    <div class="gate-shell">
+      <div class="gate-status"><span></span> secure connection established</div>
+      <p class="gate-eyebrow">PRIVATE SESSION // CHES → JOHN CARLO</p>
+      <div class="gate-mark">抹茶</div>
+      <h1>John Carlo,<br><em>puwede ka ba?</em></h1>
+      <p class="gate-copy">One song first. Then I’ll let you into this little corner I made for you.</p>
+      <button id="playIntro" class="gate-button" type="button"><b>▶</b><span>Play “Puwede Ka Ba?”</span></button>
+      <button id="finishSong" class="finish-song-button" type="button" hidden>Finished the song? Continue →</button>
+      <div id="introProgress" class="intro-progress" hidden>
+        <div class="progress-meta"><span id="audioState">ready</span><span id="audioTime">0:00</span></div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+      </div>
+      <p id="audioNote" class="audio-note">Headphones recommended ♡</p>
+      <audio id="introAudio" preload="metadata">
+        <source src="assets/puwede-ka-ba.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </section>
+
+  <section id="accessTransition" class="access-transition" aria-hidden="true">
+    <div class="access-panel">
+      <p class="access-kicker">SECURE SESSION // TRUST HANDSHAKE</p>
+      <h2>ACCESS GRANTED:<br><span>JOHN CARLO</span></h2>
+      <div class="access-checks" aria-live="polite">
+        <p class="access-line" data-step="1"><span>✓</span> identity verified</p>
+        <p class="access-line" data-step="2"><span>✓</span> trust level: maximum</p>
+        <p class="access-line" data-step="3"><span>♡</span> access granted ♡</p>
+      </div>
+    </div>
+  </section>
+
+  <main id="siteShell" class="site-shell" aria-hidden="true">
+    <section class="hero section" id="top">
+      <div class="floating floating-one">matcha</div>
+      <div class="floating floating-two">♡</div>
+      <div class="floating floating-three">JC</div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">a little corner of the internet, made just for you</p>
+        <h1>Hi, <span>John Carlo.</span></h1>
+        <p class="hero-note">I know you like matcha.<br />And I’m slowly learning all the little things that make you, you.</p>
+        <button class="primary-btn" id="beginBtn">open this slowly <span>↓</span></button>
+        <code class="easter-egg">// vulnerability found: you</code>
+      </div>
+
+      <div class="matcha-cup reveal" aria-hidden="true">
+        <div class="steam steam-1"></div><div class="steam steam-2"></div>
+        <div class="cup"><div class="tea"><span class="heart-foam">♡</span></div></div>
+        <div class="saucer"></div>
+      </div>
+    </section>
+
+    <section class="section intro" id="letter">
+      <div class="section-number reveal">01 / FOR YOU</div>
+      <div class="intro-grid">
+        <div class="big-line reveal">
+          <p>I don’t want to love a version of you I made up in my head.</p>
+          <p class="accent">I want to know the real you.</p>
+        </div>
+        <div class="small-copy reveal">
+          <p>Hindi kita gustong kabisaduhin na parang questionnaire. I want to know the little things because they are pieces of you.</p>
+          <p>One conversation at a time. One date at a time. One random story at a time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section know-you" id="know-you">
+      <div class="section-number reveal">02 / WHAT I KNOW SO FAR</div>
+      <div class="fact-card matcha-card reveal">
+        <div class="fact-icon">🍵</div>
+        <p class="fact-kicker">fact no. 001</p>
+        <h2>You like matcha.</h2>
+        <p>And somehow, even something this small already feels worth remembering.</p>
+      </div>
+
+      <div class="learn-grid">
+        <article class="learn-card reveal"><span>02</span><div class="learn-icon">🐈</div><h3>Cats & dogs</h3><p>You have a soft spot for both — which honestly tells me a lot already.</p></article>
+        <article class="learn-card reveal"><span>03</span><div class="learn-icon">🥣</div><h3>Overnight oats</h3><p>One of those tiny details I never want to forget because it feels very you.</p></article>
+        <article class="learn-card reveal"><span>04</span><div class="learn-icon">🍳</div><h3>You love cooking</h3><p>I like knowing that you can make something with your own hands and turn it into care.</p></article>
+        <article class="learn-card reveal"><span>05</span><div class="learn-icon">⛪</div><h3>Former sakristan</h3><p>A little piece of your story that says something about the life you grew up around.</p></article>
+        <article class="learn-card reveal"><span>06</span><div class="learn-icon">🏡</div><h3>Family-oriented</h3><p>The people you love matter deeply to you. That matters to me, too.</p></article>
+        <article class="learn-card reveal"><span>07</span><div class="learn-icon">🎓</div><h3>Magna Cum Laude</h3><p>You worked for what you achieved. I hope you know how admirable that is.</p></article>
+        <article class="learn-card reveal"><span>08</span><div class="learn-icon">🧑‍💻</div><h3>Security engineer</h3><p>You spend your days protecting systems. Somehow, I’m hoping you’ll let me into your world too.</p></article>
+        <article class="learn-card reveal"><span>09</span><div class="learn-icon">↔</div><h3>Bunso + panganay</h3><p>You’re the bunso. I’m the panganay. Two very different family roles — maybe that’s part of what makes this interesting.</p></article>
+      </div>
+
+      <p class="center-line reveal">Maybe someday, when someone asks me, “Ano bang alam mo kay John Carlo?”<br /><strong>I can smile and say, “How much time do you have?”</strong></p>
+      <code class="easter-egg centered">heart.exe → compromised</code>
+    </section>
+
+    <section class="section worlds" id="worlds">
+      <div class="section-number reveal">03 / THE FISH & THE BIRD</div>
+      <div class="worlds-stage reveal">
+        <div class="sky-world"><span class="bird">⌁</span><p>your world</p></div>
+        <div class="meeting-line"><span>where both can still breathe</span></div>
+        <div class="water-world"><span class="fish">◖</span><p>my world</p></div>
+      </div>
+      <blockquote class="reveal">“Love isn’t about asking someone to leave the life they were created for. It’s about finding a place where both can still breathe.”</blockquote>
+      <p class="worlds-copy reveal">Maybe we don’t have to become the same person to build something meaningful. Maybe we just keep meeting in the middle — again and again — until that little place starts to feel like ours.</p>
+    </section>
+
+    <section class="section security" id="security">
+      <div class="section-number reveal">04 / YOUR WORLD</div>
+      <div class="security-card reveal">
+        <div class="terminal-window">
+          <div class="terminal-bar"><i></i><i></i><i></i><span>johncarlo@security:~</span></div>
+          <pre><code><span class="prompt">$</span> scan --target heart
+<span class="muted">checking boundaries...</span>
+<span class="muted">checking trust...</span>
+<span class="success">✓ safe connection found</span>
+<span class="warning">threat level: dangerously cute</span>
+<span class="prompt">$</span> sudo let-me-love-you</code></pre>
+        </div>
+        <div class="security-copy">
+          <p class="eyebrow">to my favorite security engineer</p>
+          <h2>I want to learn your world, too.</h2>
+          <p>The long days. The incidents that test your patience. The problems only you notice. The things you’re proud of. The pressure you carry quietly. I may not understand every technical detail yet, but I want to understand the person behind all of it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section future" id="future">
+      <div class="section-number reveal">05 / MAYBE SOMEDAY</div>
+      <div class="future-grid">
+        <div class="future-card reveal">
+          <p class="tiny">one little future I think about</p>
+          <h2>“John Carlo, labas ka.<br /><em>Tara. Ako bahala today.</em>”</h2>
+          <p>Maybe pagod ka. Maybe umuulan. Maybe traffic. Maybe kukuha lang tayo ng matcha, something warm to eat, or ingredients because you suddenly feel like cooking.</p>
+          <p>Nothing grand. Just ordinary days that slowly become ours.</p>
+        </div>
+        <div class="future-card soft reveal">
+          <p class="tiny">another one</p>
+          <h2>Maybe our differences can become <em>balance.</em></h2>
+          <p>You know what it’s like to be the bunso. I know what it’s like to be the panganay. Maybe we’ll teach each other softness, patience, responsibility, and how to be cared for in ways we’re not used to.</p>
+        </div>
+      </div>
+    </section>
+
+    
+
+<section class="original-continuation-direct" id="ches-world">
+  <div class="section section-number reveal">07 / NOW, IT'S MY TURN ♡</div>
+  <div class="section continuation-intro reveal">
+    <p class="eyebrow">you've gotten to know a little of how I see you</p>
+    <h2>Now, let me introduce myself to you.</h2>
+    <p>Now I want you to know me too — my story, my heart, the little things I love, and the parts of me I hope you'll understand with time.</p>
+    <div class="ches-terminal" aria-label="Ches identity terminal">
+      <code>&gt; identity: ches</code>
+      <code>&gt; access: granted</code>
+      <code>&gt; opening heart.exe... ♡</code>
+    </div>
+  </div>
+  <div class="original-site-embedded">
+    <div class="original-site-shell">
+    <nav id="desktop-nav">
+      <div class="logo">Ches for John Carlo</div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#basic-info">Basic Info</a></li>
+          <li><a href="#heart">My Heart</a></li>
+          <li><a href="#favorites">Favorites</a></li>
+          <li><a href="#songs">Songs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#projects">Stations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Ches for John Carlo</div>
+
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleOriginalMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleOriginalMenu()">About</a></li>
+          <li><a href="#basic-info" onclick="toggleOriginalMenu()">Basic Info</a></li>
+          <li><a href="#heart" onclick="toggleOriginalMenu()">My Heart</a></li>
+          <li><a href="#favorites" onclick="toggleOriginalMenu()">Favorites</a></li>
+          <li><a href="#songs" onclick="toggleOriginalMenu()">Songs</a></li>
+          <li><a href="#gallery" onclick="toggleOriginalMenu()">Gallery</a></li>
+          <li><a href="#projects" onclick="toggleOriginalMenu()">Stations</a></li>
+          <li><a href="#contact" onclick="toggleOriginalMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container profile-pic-container">
+        <img
+          src="./assets/picture.png"
+          alt="Chester Mikhail De Guzman profile picture"
+        />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello John Carlo, I'm</p>
+        <h1 class="title">Chester Mikhail De Guzman</h1>
+        <p class="section__text__p2">Ches | Yosa | Your clingy admirer</p>
+        <div class="hero-badges">
+          <span>matcha mode</span><span>encrypted feelings</span><span>for John Carlo only</span>
+        </div>
+
+        <div class="terminal-card" aria-label="A tiny security themed note">
+          <div class="terminal-top"><span></span><span></span><span></span><b>ches@heart:~</b></div>
+          <code><em>$</em> verify john_carlo</code>
+          <code class="terminal-success">✓ trusted person detected</code>
+          <code class="terminal-easter">// vulnerability found: you</code>
+        </div>
+
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='#about'">
+            Know Me
+          </button>
+
+          <button class="btn btn-color-2" onclick="location.href='#projects'">
+            Stations
+          </button>
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/chester-mikhail-de-guzman-514366284/'"
+          />
+
+          <img
+            src="./assets/medium.png"
+            alt="My Medium profile"
+            class="icon"
+            onclick="location.href='https://medium.com/@yosayosa'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="section-container">
+        <div class="section__pic-container about-pic-container">
+          <img
+            src="./assets/piches.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>I was in a relationship for five months.</p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Bachelor of Science in Information Technology<br />
+                Major in Business Analytics<br />
+                Magna Cum Laude
+              </p>
+            </div>
+          </div>
+
+          <div class="text-container about-letter">
+            <p>
+              Hi John Carlo na cute na mukhang hirono, I’ve been wanting to
+              properly introduce myself to you—not just the things you can
+              easily see, but the parts of me that matter most.
+            </p>
+
+            <p>
+              My full name is Chester Mikhail De Guzman, but you can call me
+              Ches. You can even call me by my second name if you want. It might
+              sound silly, but hearing it from someone special always feels
+              different. I’m 24 now and turning 25 this November. As I grow
+              older, I keep trying to become a better version of myself—not
+              because I think I’m lacking, but because I want to be someone who
+              loves well, someone who is dependable, and someone worthy of the
+              people who choose to stay in my life.
+            </p>
+
+            <div id="more-about" class="hidden-letter">
+              <p>
+                I’m the eldest of four siblings, and a big part of who I am
+                comes from that. Ever since I was young, I’ve carried a sense of
+                responsibility for the people I love. Sometimes it can be
+                exhausting, but I never really complain because seeing my family
+                okay makes everything worth it. They are one of the biggest
+                reasons why I keep pushing forward, even on the days when life
+                feels heavier than usual.
+              </p>
+
+              <p>
+                I’m actually a very simple person. I’m a homebody and I find
+                comfort in quiet moments. I don’t drink alcohol, and most of the
+                time, I’m happiest staying in, playing games like Roblox,
+                Valorant, and Grand Chase, watching K-dramas, thrillers, or
+                horror movies, or listening to classical music, Christmas jazz,
+                and Korean OSTs. Maybe that’s why I tend to love deeply—I find
+                beauty in small things, in simple moments, and in the feeling of
+                being close to someone.
+              </p>
+
+              <p>
+                One of the most important people in my life is my lola. Being
+                close to her taught me how to care for people, how to stay
+                loyal, and how to love with sincerity. Because of her, I learned
+                that love is often found in the little things—in showing up, in
+                remembering details, in making people feel seen. I’m also quite
+                emotional, to be honest. I cry easily, I get attached, and I
+                feel things deeply. Sometimes I wish I could be tougher, but
+                this is who I am. When someone becomes important to me, I don't
+                know how to love halfway. I give my whole heart.
+              </p>
+
+              <p>
+                Professionally, life keeps me on my toes. I currently work two
+                jobs—one as a Data Analyst and another as a freelance Project
+                Manager. There are days when I'm juggling meetings, reports,
+                deadlines, and responsibilities from morning until night. It can
+                be exhausting, and sometimes I barely have enough time for
+                myself. But I've always believed that hard work is one of the
+                ways I show love—for my family, for my future, and for the life
+                I'm trying to build.
+              </p>
+
+              <p>
+                Maybe that's why when someone becomes important to me, I make a
+                conscious effort to create time for them no matter how busy life
+                gets. Because for me, being present isn't about having all the
+                time in the world—it's about choosing someone even on the days
+                when life feels overwhelming.
+              </p>
+
+              <p>
+                I've always been passionate about data and analytics. I studied
+                Business Analytics and now work as a Data Analyst, hoping one
+                day to become a data scientist or data engineer. I genuinely
+                enjoy what I do, especially finding stories hidden behind
+                numbers and making sense of things that seem complicated at
+                first glance.
+              </p>
+
+              <p>
+                But if I'm being completely honest, none of those things are
+                what I wanted to tell you the most.
+              </p>
+
+              <p>
+                What I really want you to know is that I appreciate you. More
+                than you probably realize.
+              </p>
+
+              <p>And I also want to apologize in advance.</p>
+
+              <p>
+                Sorry if there will be times when I overthink, become distant,
+                ask too many questions, or need reassurance more than I should.
+                The truth is that I've been through things that left scars on
+                me. Some wounds heal slower than others. I wish I could say that
+                I've completely moved on from every hurt and disappointment I've
+                experienced, but that wouldn't be honest.
+              </p>
+
+              <p>I'm still healing.</p>
+
+              <p>
+                I try every day to be better than who I was yesterday. I try to
+                unlearn fears that no longer serve me and stop expecting people
+                to hurt me the way others did before. But healing isn't
+                something that happens overnight. There are days when my mind
+                gets too loud and my thoughts start convincing me of things that
+                aren't even true.
+              </p>
+
+              <p>I know that can be difficult sometimes, and for that, I'm sorry.</p>
+
+              <p>What I can promise you is that I'm trying. I will continue trying.</p>
+
+              <p>
+                To be honest, very few people know this, but I want you to
+                understand where I'm coming from. What my ex put me through back
+                in 2023 affected me more deeply than I ever admitted. The pain
+                and trauma became so overwhelming that I had to undergo therapy
+                sessions once a week for three straight months just to cope and
+                slowly piece myself back together. It wasn't just heartbreak—it
+                left emotional wounds that took a long time to heal, and some of
+                those scars are still with me today.
+              </p>
+
+              <p>
+                I'm not asking you to fix me or carry my burdens. I just hope
+                that when those moments happen, you can be patient with me.
+                Sometimes all I need is reassurance. A simple reminder that
+                things are okay. A few sincere words can quiet the hundreds of
+                worries inside my head.
+              </p>
+
+              <p>
+                I want to become better—not because someone is forcing me to,
+                but because I genuinely want to grow. I don't want my past pains
+                to dictate my future. I don't want my fears to become walls
+                between me and the people I care about.
+              </p>
+
+              <p>And if you choose to stay, I hope you'll get to see that version of me.</p>
+
+              <p>The version that's learning to trust again.</p>
+
+              <p>The version that's learning to love without fear.</p>
+
+              <p>
+                The version that's trying every day to become someone worthy of
+                your time, your affection, and your presence.
+              </p>
+
+              <p>
+                There is also something vulnerable I want you to know about me.
+                I have a condition that has caused me to gain weight without me
+                fully realizing how much my body was changing. After the operation
+                I had last year, my colon started processing and moving food more
+                slowly than it normally should. It has changed my relationship with
+                my body in ways I am still learning to accept. I know I have
+                imperfections, and I may not always feel confident in the body I
+                have, but I hope to find someone who can see beyond all of that—
+                someone who can love me beyond my imperfections and love the person
+                I am, not just the body I live in. I don't need to be loved because
+                I am perfect. I want to be loved gently, sincerely, and completely,
+                even in the parts of myself I am still learning to embrace.
+              </p>
+
+              <p>
+                And John Carlo, let me have the time and the chance to learn you—your
+                little habits, your quiet days, the things that make you smile, and
+                even the parts of you that are harder to understand. I don't want
+                to love you only in the way I know how. I want to learn how you want
+                to be loved, too. Maybe love is a little like the work you do in security engineering:
+                you pay attention to the smallest details, because even the things
+                that seem tiny can mean so much.
+                I want to pay that kind of attention to your heart. And yes, I'll
+                gladly remember that matcha can make your day a little better. ♡
+              </p>
+
+              <p>
+                And hopefully, even if we have little disagreements along the
+                way—even because of my pagiging picky eater, we'll choose to
+                understand each other instead of letting those moments pull us
+                apart. I know I can be stubborn with food, and you might find it
+                funny, frustrating, or both, but I hope it's one of those little
+                things we'll look back on and laugh about someday.
+              </p>
+
+              <p>
+                I don't know what the future holds for us, and I don't want to
+                make promises I can't guarantee. But what I can promise is that
+                everything I've shown you has been genuine. My intentions are
+                genuine. My care for you is genuine.
+              </p>
+
+              <p>
+                And for someone like me, who feels everything a little too
+                deeply, that means a lot.
+              </p>
+
+              <p>
+                Thank you for taking the time to know me John Carlo, kahit sa
+                maikling time pa lang. And thank you for being someone who has
+                made my heart feel excited, hopeful, and soft again.
+              </p>
+            </div>
+
+            <button class="btn btn-color-2 read-more-btn" onclick="toggleOriginalReadMore()">
+              Read More ♡
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="basic-info">
+      <span class="security-easter egg-right" aria-hidden="true">heart.exe → compromised</span>
+      <p class="section__text__p1">A Little More</p>
+      <h1 class="title">Basic Info</h1>
+
+      <div class="info-grid">
+        <div class="info-card"><h3>Name</h3><p>Chester Mikhail De Guzman</p></div>
+        <div class="info-card"><h3>Nickname</h3><p>Ches or Yosa, my in-game name</p></div>
+        <div class="info-card"><h3>Age</h3><p>24</p></div>
+        <div class="info-card"><h3>Birthdate</h3><p>November 05, 2001</p></div>
+        <div class="info-card"><h3>Province</h3><p>Bulacan</p></div>
+        <div class="info-card"><h3>Favorite Colors</h3><p>Gray and Black</p></div>
+        <div class="info-card"><h3>Hobbies</h3><p>Kdrama, movies, online games, and learning analytics</p></div>
+        <div class="info-card"><h3>Personality</h3><p>Extrovert, clingy, caring, and goal oriented</p></div>
+      </div>
+
+      <div class="long-card">
+        <h2>What Makes Me Feel Loved</h2>
+        <p>
+          Reassurance, honest communication, and being chosen even on ordinary
+          days. One thing I’ve learned about myself is that I don't like feeling
+          neglected. I don't need attention every second of the day, but I deeply
+          value being acknowledged.
+        </p>
+        <p>
+          When my messages go unseen for a long time, it can make me feel
+          forgotten or unimportant. What makes me feel loved is knowing that I'm
+          seen, appreciated, and chosen. Sometimes, a simple message or
+          reassurance is enough to make my heart feel at peace.
+        </p>
+      </div>
+
+      <div class="long-card">
+        <h2>When I'm Upset</h2>
+        <p>
+          Sometimes I need a little time to process my emotions. I may become
+          quiet, but that doesn't mean I care any less. More often than not, I
+          just need patience, understanding, and a safe space to express how I
+          feel.
+        </p>
+      </div>
+
+      <div class="long-card">
+        <h2>My Dreams</h2>
+        <p>
+          I want to build a life filled with purpose, happiness, and meaningful
+          relationships.
+        </p>
+        <ul class="soft-list">
+          <li>Growing professionally in my career</li>
+          <li>Becoming financially stable</li>
+          <li>Traveling to new places</li>
+          <li>Creating memorable experiences with the people I love</li>
+          <li>Building a future that feels peaceful and fulfilling</li>
+        </ul>
+      </div>
+
+      <div class="long-card">
+        <h2>Things I Want You To Know</h2>
+        <p>
+          I'm not perfect. There are days when I overthink, doubt myself, or
+          need reassurance. There are moments when I may struggle to express
+          exactly what I'm feeling.
+        </p>
+        <p>
+          But one thing about me is that I always try. I try to communicate. I
+          try to understand. I try to grow. And I try to love people the best
+          way I know how.
+        </p>
+        <p>
+          If I care about you, you'll never have to question whether you're
+          important to me.
+        </p>
+      </div>
+
+      <div class="long-card">
+        <h2>Things You'll Discover When Dating Me</h2>
+        <ul class="soft-list">
+          <li>I remember random little details.</li>
+          <li>I send messages when something reminds me of you.</li>
+          <li>I can be clingy sometimes.</li>
+          <li>I love receiving and giving reassurance.</li>
+          <li>I enjoy sharing even the smallest moments of my day.</li>
+          <li>I take photos of things I want to remember.</li>
+          <li>I care deeply, even when I don't always know how to express it perfectly.</li>
+        </ul>
+      </div>
+
+      <div class="long-card">
+        <h2>For You</h2>
+        <p>
+          Thank you for taking the time to get to know me beyond the surface. I
+          hope this helps you understand not just who I am, but the heart behind
+          everything I do.
+        </p>
+        <p>
+          I may not always have the perfect words, but I promise that whenever I
+          care about someone, my feelings are genuine. And if you're reading
+          this, it means you're someone special enough for me to open this part
+          of myself to.
+        </p>
+      </div>
+    </section>
+
+    <section id="heart">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">What I'm Like</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Love Language</h2>
+
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Words of Affirmation</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Physical Touch</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Quality Time</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Acts of Service</h3></div></article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">My Heart</h2>
+
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Loyal and Faithful</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Goal Oriented</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Honest</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Trustworthy</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Clingy, just a little</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" /><div><h3>Loves Deeply</h3></div></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="long-card">
+          <h2>Playful, But Serious When It Matters</h2>
+          <p>
+            I know that maybe you first got to know me as someone playful,
+            maharot, and sometimes unserious. That side of me is real too,
+            because I like being comfortable and silly with someone I feel safe
+            with.
+          </p>
+          <p>
+            But I also want you to know that I am serious when it matters. I
+            have goals. I have dreams. I have plans for myself, for my future,
+            and hopefully, for us too. When I commit to someone, I don't treat
+            it like a game. I become intentional. I become serious.
+          </p>
+          <p>
+            I'm not just loyal. I am faithful. For me, being loyal means staying
+            beside someone and not betraying them. But being faithful goes
+            deeper than that. It means choosing someone even when they are not
+            around. It means respecting them in private, not just in public. It
+            means keeping boundaries, protecting the relationship, and making
+            sure my actions never give someone a reason to doubt where my heart
+            is.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="favorites">
+      <span class="security-easter egg-left" aria-hidden="true">threat level: dangerously cute</span>
+      <p class="section__text__p1">A Few Of My</p>
+      <h1 class="title">Favorites</h1>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Favorite Colors</h3>
+          <p>Gray and Black</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Favorite Games</h3>
+          <p>Valorant, Grand Chase, and Roblox</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Interests</h3>
+          <p>Exploring new cafes and spending quality time with the people I love.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Favorite Things</h3>
+          <p>Meaningful conversations, cute gestures, and thoughtful efforts.</p>
+        </div>
+      </div>
+
+      <div class="song-grid">
+        <a class="song-card" href="https://open.spotify.com/track/6xLaurWlCs8Tpi2q2iHrlO?si=c0c9b4cd40114165" target="_blank">
+          <h3>Kay Ganda Mo</h3>
+          <p>Frank Ely</p>
+          <span>Listen on Spotify</span>
+        </a>
+
+        <a class="song-card" href="https://open.spotify.com/track/5F7Yu2gEkypazMmr4QYXIj?si=ddb5157bdf0643e0" target="_blank">
+          <h3>Gaano Ko Ikaw Kamahal</h3>
+          <p>Favorite Song</p>
+          <span>Listen on Spotify</span>
+        </a>
+
+        <a class="song-card" href="https://open.spotify.com/track/64KOSEJ9ZlV75JPxro5Chp?si=c7366bfd171b4913" target="_blank">
+          <h3>Dandelion</h3>
+          <p>Oohyo</p>
+          <span>Listen on Spotify</span>
+        </a>
+
+        <a class="song-card" href="https://open.spotify.com/track/5dS8Hd9qBAv9hbmYQeXHmI?si=d614fb0235eb4536" target="_blank">
+          <h3>Awit ng Paghahangad</h3>
+          <p>Favorite Song</p>
+          <span>Listen on Spotify</span>
+        </a>
+
+        <a class="song-card" href="https://open.spotify.com/track/35o9a4iAfLl5jRmqMX9c1D?si=3b60530c2fc84aea" target="_blank">
+          <h3>Shape of My Heart</h3>
+          <p>Favorite Song</p>
+          <span>Listen on Spotify</span>
+        </a>
+
+        <a class="song-card" href="https://open.spotify.com/track/1vzxlhQ3dujloZsqeO3Wei?si=e5fded2f24054d2c" target="_blank">
+          <h3>Ikaw at Ako</h3>
+          <p>Johnoy Danao</p>
+          <span>Listen on Spotify</span>
+        </a>
+
+        <a class="song-card" href="https://open.spotify.com/track/28BZwCOluw5hn4zEVm6xkJ?si=81d612a17e314109" target="_blank">
+          <h3>Bato sa Buhangin</h3>
+          <p>Favorite Song</p>
+          <span>Listen on Spotify</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="songs">
+      <span class="security-easter egg-right egg-command" aria-hidden="true">sudo let-me-love-you</span>
+      <p class="section__text__p1">A Song For</p>
+      <h1 class="title">John Carlo</h1>
+
+      <div class="long-card special-song">
+        <h2>Puwede Ka Ba?</h2>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://open.spotify.com/track/1RNCibCOmM49zenUyBXSLy?si=c3f9d1ea132f4b53', '_blank')"
+          >
+            Spotify
+          </button>
+        </div>
+
+        <p>
+          Whenever I listen to <strong>"Puwede Ka Ba?"</strong>, I think of you.
+          Not because I already know where this will lead, but because the song
+          feels like the question my heart has been quietly learning how to ask:
+          puwede ba kitang makilala nang mas malalim, dahan-dahan, without rushing
+          the beautiful parts that deserve time?
+        </p>
+
+        <p>
+          Puwede ba akong manatili habang unti-unti kong inaalam kung paano ka
+          magmahal at kung paano mo gustong mahalin? I don't want to love you only
+          according to what love means to me. Give me time to learn you—your
+          silences, your comfort, your fears, your dreams, your boundaries, and the
+          little things that make your ordinary days softer. I want to love you in
+          a language your own heart understands.
+        </p>
+
+        <p>
+          Maybe one day I'll know your security-engineering stories by heart: the
+          incidents that kept you alert, the problems you had to untangle, and the
+          little wins that made the long hours worth it. Maybe I'll know exactly when you need encouragement,
+          when you need quiet, and when a matcha in your hand would make everything
+          feel just a little lighter. I want to know those details, John Carlo, because
+          caring for someone is also learning the small things that make them who
+          they are.
+        </p>
+
+        <p>
+          So when I ask, <em>"Puwede ka ba?"</em>, what I really mean is: puwede ba
+          kitang piliin nang hindi ka minamadali? Puwede ba kitang kilalanin through
+          every version of you—the bright days, the exhausted days, the complicated
+          days, and the ordinary ones? And if your heart eventually lets me, puwede
+          ba kitang mahalin not just loudly, but carefully, patiently, and in the
+          way that makes you feel safest?
+        </p>
+
+        <p>
+          I can't promise that I'll always get everything right on the first try.
+          But I can promise to listen, to learn, to adjust, and to keep choosing
+          sincerity over assumptions. I don't want to simply fit you into the love
+          I already know how to give. I want us to discover what love could look
+          like when two people are willing to understand each other.
+        </p>
+
+        <p class="signature">For you, always — Ches 🤍</p>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <p class="section__text__p1">A Few Photos</p>
+      <h1 class="title">Gallery</h1>
+
+      <div class="gallery-container">
+        <img src="./assets/ches1.jpg" alt="Ches 1" />
+        <img src="./assets/ches2.jpg" alt="Ches 2" />
+        <img src="./assets/ches3.jpg" alt="Ches 3" />
+        <img src="./assets/ches4.jpg" alt="Ches 4" />
+        <img src="./assets/ches5.jpg" alt="Ches 5" />
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Special Stations</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers project-containers">
+          <div class="details-container color-container">
+            <div class="project-img-container">
+              <img src="./assets/hachiware.png" alt="Station 1" class="project-img" />
+            </div>
+
+            <h2 class="experience-sub-title project-title">Station 1</h2>
+            <h3>The Cleanest Data Is You</h3>
+            <p class="station-description">
+              A little story inspired by you. One of my favorite things I've written.
+            </p>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://medium.com/@yosayosa/the-cleanest-data-is-you-5cc33635f998'"
+              >
+                Read Article
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="project-img-container">
+              <img src="./assets/el gatto.jpg" alt="Station 2" class="project-img" />
+            </div>
+
+            <h2 class="experience-sub-title project-title">Station 2</h2>
+            <h3>For John Carlo</h3>
+            <p class="station-description">
+              A special letter written only for you.
+            </p>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://chesterdeguzman.github.io/css-envelope-letter-animation/'"
+              >
+                Open Letter
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+
+          <p>
+            <a href="mailto:chestermikhaildeguzman0505@gmail.com">Gmail</a>
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+
+          <p>
+            <a href="https://www.linkedin.com/in/chester-mikhail-de-guzman-514366284/">
+              LinkedIn
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#basic-info">Basic Info</a></li>
+            <li><a href="#heart">My Heart</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#songs">Songs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#projects">Stations</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <p>Made with love for John Carlo 🤍</p>
+    </footer>
+
+    
+    </div>
+  
+  </div>
+</section>
+<section class="section chance" id="chance">
+      <div class="section-number reveal">06 / ONE QUESTION</div>
+      <div class="chance-card reveal">
+        <p class="eyebrow">no pressure. just sincerity.</p>
+        <h2>Can we build our future?</h2>
+        <p>I’m not asking you to promise me forever right now. I’m asking for the chance to see what we could become if we choose honesty, patience, effort, and each other — one day at a time.</p>
+        <strong>Take a chance with me.</strong>
+        <div class="chance-tags"><span>slowly</span><span>genuinely</span><span>intentionally</span><span>together</span></div>
+      </div>
+      <code class="easter-egg centered">// permission requested: build_future_together</code>
+    </section>
+
+    <section class="section ending" id="ending">
+      <div class="ending-inner reveal">
+        <p class="eyebrow">for now, this is enough</p>
+        <h2>I don’t know exactly where this goes.</h2>
+        <p>Pero alam ko kung paano ko gustong pumunta doon.</p>
+        <div class="ending-words"><span>slowly.</span><span>genuinely.</span><span>intentionally.</span></div>
+        <p class="final-copy">Stay long enough for me to learn you.<br />I’ll stay long enough to let you learn me, too.<br /><strong>And if you’re willing, let’s find out what we can build together.</strong></p>
+        <div class="signature"><span>my pahinga.</span><span>my maybe.</span><strong>and if life is kind enough… maybe someday, my home.</strong></div>
+      </div>
+      <a href="#top" class="back-top">back to the beginning ↑</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
