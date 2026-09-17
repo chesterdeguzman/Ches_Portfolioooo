@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#edf1df" />
+  <meta name="description" content="A little corner of the internet made for John Carlo." />
+  <title>For John Carlo — Ches</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="site-locked">
+  <div class="grain" aria-hidden="true"></div>
+
+  <section id="songGate" class="song-gate" aria-label="Puwede Ka Ba intro">
+    <div class="gate-grid" aria-hidden="true"></div>
+    <div class="gate-shell">
+      <div class="gate-status"><span></span> secure connection established</div>
+      <p class="gate-eyebrow">PRIVATE SESSION // CHES → JOHN CARLO</p>
+      <div class="gate-mark">抹茶</div>
+      <h1>John Carlo,<br><em>puwede ka ba?</em></h1>
+      <p class="gate-copy">One song first. Then I’ll let you into this little corner I made for you.</p>
+      <button id="playIntro" class="gate-button" type="button"><b>▶</b><span>Play “Puwede Ka Ba?”</span></button>
+      <div id="introProgress" class="intro-progress" hidden>
+        <div class="progress-meta"><span id="audioState">ready</span><span id="audioTime">0:00</span></div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+      </div>
+      <p id="audioNote" class="audio-note">Headphones recommended ♡</p>
+      <audio id="introAudio" preload="metadata">
+        <source src="assets/puwede-ka-ba.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </section>
+
+  <section id="accessTransition" class="access-transition" aria-hidden="true">
+    <div class="access-panel">
+      <p class="access-kicker">SECURE SESSION // TRUST HANDSHAKE</p>
+      <h2>ACCESS GRANTED:<br><span>JOHN CARLO</span></h2>
+      <div class="access-checks" aria-live="polite">
+        <p class="access-line" data-step="1"><span>✓</span> identity verified</p>
+        <p class="access-line" data-step="2"><span>✓</span> trust level: maximum</p>
+        <p class="access-line" data-step="3"><span>♡</span> access granted ♡</p>
+      </div>
+    </div>
+  </section>
+
+  <main id="siteShell" class="site-shell" aria-hidden="true">
+    <section class="hero section" id="top">
+      <div class="floating floating-one">matcha</div>
+      <div class="floating floating-two">♡</div>
+      <div class="floating floating-three">JC</div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">a little corner of the internet, made just for you</p>
+        <h1>Hi, <span>John Carlo.</span></h1>
+        <p class="hero-note">I know you like matcha.<br />And I’m slowly learning all the little things that make you, you.</p>
+        <button class="primary-btn" id="beginBtn">open this slowly <span>↓</span></button>
+        <code class="easter-egg">// vulnerability found: you</code>
+      </div>
+
+      <div class="matcha-cup reveal" aria-hidden="true">
+        <div class="steam steam-1"></div><div class="steam steam-2"></div>
+        <div class="cup"><div class="tea"><span class="heart-foam">♡</span></div></div>
+        <div class="saucer"></div>
+      </div>
+    </section>
+
+    <section class="section intro" id="letter">
+      <div class="section-number reveal">01 / FOR YOU</div>
+      <div class="intro-grid">
+        <div class="big-line reveal">
+          <p>I don’t want to love a version of you I made up in my head.</p>
+          <p class="accent">I want to know the real you.</p>
+        </div>
+        <div class="small-copy reveal">
+          <p>Hindi kita gustong kabisaduhin na parang questionnaire. I want to know the little things because they are pieces of you.</p>
+          <p>One conversation at a time. One date at a time. One random story at a time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section know-you" id="know-you">
+      <div class="section-number reveal">02 / WHAT I KNOW SO FAR</div>
+      <div class="fact-card matcha-card reveal">
+        <div class="fact-icon">🍵</div>
+        <p class="fact-kicker">fact no. 001</p>
+        <h2>You like matcha.</h2>
+        <p>And somehow, even something this small already feels worth remembering.</p>
+      </div>
+
+      <div class="learn-grid">
+        <article class="learn-card reveal"><span>02</span><div class="learn-icon">🐈</div><h3>Cats & dogs</h3><p>You have a soft spot for both — which honestly tells me a lot already.</p></article>
+        <article class="learn-card reveal"><span>03</span><div class="learn-icon">🥣</div><h3>Overnight oats</h3><p>One of those tiny details I never want to forget because it feels very you.</p></article>
+        <article class="learn-card reveal"><span>04</span><div class="learn-icon">🍳</div><h3>You love cooking</h3><p>I like knowing that you can make something with your own hands and turn it into care.</p></article>
+        <article class="learn-card reveal"><span>05</span><div class="learn-icon">⛪</div><h3>Former sakristan</h3><p>A little piece of your story that says something about the life you grew up around.</p></article>
+        <article class="learn-card reveal"><span>06</span><div class="learn-icon">🏡</div><h3>Family-oriented</h3><p>The people you love matter deeply to you. That matters to me, too.</p></article>
+        <article class="learn-card reveal"><span>07</span><div class="learn-icon">🎓</div><h3>Magna Cum Laude</h3><p>You worked for what you achieved. I hope you know how admirable that is.</p></article>
+        <article class="learn-card reveal"><span>08</span><div class="learn-icon">🧑‍💻</div><h3>Security engineer</h3><p>You spend your days protecting systems. Somehow, I’m hoping you’ll let me into your world too.</p></article>
+        <article class="learn-card reveal"><span>09</span><div class="learn-icon">↔</div><h3>Bunso + panganay</h3><p>You’re the bunso. I’m the panganay. Two very different family roles — maybe that’s part of what makes this interesting.</p></article>
+      </div>
+
+      <p class="center-line reveal">Maybe someday, when someone asks me, “Ano bang alam mo kay John Carlo?”<br /><strong>I can smile and say, “How much time do you have?”</strong></p>
+      <code class="easter-egg centered">heart.exe → compromised</code>
+    </section>
+
+    <section class="section worlds" id="worlds">
+      <div class="section-number reveal">03 / THE FISH & THE BIRD</div>
+      <div class="worlds-stage reveal">
+        <div class="sky-world"><span class="bird">⌁</span><p>your world</p></div>
+        <div class="meeting-line"><span>where both can still breathe</span></div>
+        <div class="water-world"><span class="fish">◖</span><p>my world</p></div>
+      </div>
+      <blockquote class="reveal">“Love isn’t about asking someone to leave the life they were created for. It’s about finding a place where both can still breathe.”</blockquote>
+      <p class="worlds-copy reveal">Maybe we don’t have to become the same person to build something meaningful. Maybe we just keep meeting in the middle — again and again — until that little place starts to feel like ours.</p>
+    </section>
+
+    <section class="section security" id="security">
+      <div class="section-number reveal">04 / YOUR WORLD</div>
+      <div class="security-card reveal">
+        <div class="terminal-window">
+          <div class="terminal-bar"><i></i><i></i><i></i><span>johncarlo@security:~</span></div>
+          <pre><code><span class="prompt">$</span> scan --target heart
+<span class="muted">checking boundaries...</span>
+<span class="muted">checking trust...</span>
+<span class="success">✓ safe connection found</span>
+<span class="warning">threat level: dangerously cute</span>
+<span class="prompt">$</span> sudo let-me-love-you</code></pre>
+        </div>
+        <div class="security-copy">
+          <p class="eyebrow">to my favorite security engineer</p>
+          <h2>I want to learn your world, too.</h2>
+          <p>The long days. The incidents that test your patience. The problems only you notice. The things you’re proud of. The pressure you carry quietly. I may not understand every technical detail yet, but I want to understand the person behind all of it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section future" id="future">
+      <div class="section-number reveal">05 / MAYBE SOMEDAY</div>
+      <div class="future-grid">
+        <div class="future-card reveal">
+          <p class="tiny">one little future I think about</p>
+          <h2>“John Carlo, labas ka.<br /><em>Tara. Ako bahala today.</em>”</h2>
+          <p>Maybe pagod ka. Maybe umuulan. Maybe traffic. Maybe kukuha lang tayo ng matcha, something warm to eat, or ingredients because you suddenly feel like cooking.</p>
+          <p>Nothing grand. Just ordinary days that slowly become ours.</p>
+        </div>
+        <div class="future-card soft reveal">
+          <p class="tiny">another one</p>
+          <h2>Maybe our differences can become <em>balance.</em></h2>
+          <p>You know what it’s like to be the bunso. I know what it’s like to be the panganay. Maybe we’ll teach each other softness, patience, responsibility, and how to be cared for in ways we’re not used to.</p>
+        </div>
+      </div>
+    </section>
+
+    
+<section class="original-continuation section" id="ches-world">
+  <div class="section-number reveal">07 / NOW, HERE'S MY WORLD</div>
+  <div class="continuation-intro reveal">
+    <p class="eyebrow">you've met a little of your side of this page</p>
+    <h2>Now, let me introduce you to mine.</h2>
+    <p>This next part is my original website — my story, my heart, my favorites, my photos, my letters, and the little things I wanted you to know about me.</p>
+  </div>
+  <iframe
+    id="originalSiteFrame"
+    class="original-site-frame reveal"
+    src="original.html"
+    title="Ches's original website for John Carlo"
+    loading="eager">
+  </iframe>
+</section>
+
+<section class="section chance" id="chance">
+      <div class="section-number reveal">06 / ONE QUESTION</div>
+      <div class="chance-card reveal">
+        <p class="eyebrow">no pressure. just sincerity.</p>
+        <h2>Can we build our future?</h2>
+        <p>I’m not asking you to promise me forever right now. I’m asking for the chance to see what we could become if we choose honesty, patience, effort, and each other — one day at a time.</p>
+        <strong>Take a chance with me.</strong>
+        <div class="chance-tags"><span>slowly</span><span>genuinely</span><span>intentionally</span><span>together</span></div>
+      </div>
+      <code class="easter-egg centered">// permission requested: build_future_together</code>
+    </section>
+
+    <section class="section ending" id="ending">
+      <div class="ending-inner reveal">
+        <p class="eyebrow">for now, this is enough</p>
+        <h2>I don’t know exactly where this goes.</h2>
+        <p>Pero alam ko kung paano ko gustong pumunta doon.</p>
+        <div class="ending-words"><span>slowly.</span><span>genuinely.</span><span>intentionally.</span></div>
+        <p class="final-copy">Stay long enough for me to learn you.<br />I’ll stay long enough to let you learn me, too.<br /><strong>And if you’re willing, let’s find out what we can build together.</strong></p>
+        <div class="signature"><span>my pahinga.</span><span>my maybe.</span><strong>and if life is kind enough… maybe someday, my home.</strong></div>
+      </div>
+      <a href="#top" class="back-top">back to the beginning ↑</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
